@@ -1,0 +1,85 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.app {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s, color 0.9s;
+  
+}
+
+.theme-btn {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: inherit;
+}
+
+
+
+.calculator {
+  width: 270px;
+  height: 450px;
+  border-radius: 20px;
+  padding: 20px;
+  background: var(--bg);
+  box-shadow: 0 10px 30px rgba(19, 18, 18, 0.2);
+}
+
+.display {
+  height: 60px;
+  font-size: 24px;
+  background: var(--display-bg);
+  color: var(--text);
+  border-radius: 10px;
+  padding: 10px;
+  text-align: right;
+  margin-bottom: 20px;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+button {
+  font-size: 18px;
+  padding: 15px;
+  border-radius: 12px;
+  border: none;
+  background: var(--btn-bg);
+  color: var(--btn-text);
+  transition: 0.2s;
+}
+
+button:hover {
+  opacity: 0.85;
+}
+
+
+.app.light {
+  --bg: #e4e7ef;
+  --text: #000;
+  --display-bg:#e4e7ef;
+  --btn-bg: #FFFFFF99;
+  --btn-text: #000;
+}
+
+
+.app.dark {
+  --bg: #121212;
+  --text: #ffffff;
+  --display-bg: #121212;
+  --btn-bg: #303030;
+  --btn-text: #f7f8fb;
+}
