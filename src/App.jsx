@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import Calculator from './Calculator'
-import { MdToggleOn } from "react-icons/md";
-import { MdToggleOff } from "react-icons/md";
+import { MdToggleOn , MdToggleOff} from "react-icons/md";
 
 
 function App() {
